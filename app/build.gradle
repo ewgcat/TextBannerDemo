@@ -29,5 +29,6 @@ android {
 }
 
 dependencies {
-    api project(':textbanner')
+//    api project(':textbanner')
+    api 'com.lsh.textbanner:textbanner:1.0.0'
 }

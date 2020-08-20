@@ -8,6 +8,7 @@ buildscript {
         maven { url 'https://dl.bintray.com/umsdk/release' }
         maven { url "https://jitpack.io" }
         maven { url "https://maven.google.com" }
+        maven{url "https://ewgcat.bintray.com/utils/"}
     }
 
     dependencies {
@@ -16,6 +17,8 @@ buildscript {
         //kotlin
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.5'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
     }
 }
 
@@ -27,15 +30,15 @@ allprojects {
         maven { url 'https://dl.bintray.com/umsdk/release' }
         maven { url "https://jitpack.io" }
         maven { url "https://maven.google.com" }
-
+        maven{url "https://ewgcat.bintray.com/utils/"}
     }
 }
 
 ext {
     minSdkVersion = 21
     targetSdkVersion = 26
-    compileSdkVersion = 29
-    buildToolsVersion = '29.0.3'
+    compileSdkVersion = 30
+    buildToolsVersion = '30.0.2'
     versionCode = 84
     versionName = "3.2.3"
     dbVersion = 1
